@@ -1,0 +1,14 @@
+﻿<Window x:Class="RecipeApplicationWPF.AddStepWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Step" Height="300" Width="400">
+    <Grid>
+        <StackPanel>
+            <Label Content="Select Recipe:"/>
+            <ComboBox Name="RecipeComboBox" DisplayMemberPath="Name"/>
+            <Label Content="Step Description:"/>
+            <TextBox Name="StepTextBox"/>
+            <Button Content="Add Step" Click="AddStep_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

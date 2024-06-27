@@ -1,0 +1,9 @@
+﻿<Window x:Class="RecipeApplicationWPF.FilterRecipesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Filter Recipes" Height="450" Width="800">
+    <Grid>
+        <ComboBox Name="FoodGroupComboBox" SelectionChanged="FoodGroupComboBox_SelectionChanged"/>
+        <ListBox Name="FilteredRecipesListBox" DisplayMemberPath="Name"/>
+    </Grid>
+</Window>

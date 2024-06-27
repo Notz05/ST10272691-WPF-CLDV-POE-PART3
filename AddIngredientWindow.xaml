@@ -1,0 +1,22 @@
+﻿<Window x:Class="RecipeApplicationWPF.AddIngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Ingredient" Height="300" Width="400">
+    <Grid>
+        <StackPanel>
+            <Label Content="Select Recipe:"/>
+            <ComboBox Name="RecipeComboBox" DisplayMemberPath="Name"/>
+            <Label Content="Ingredient Name:"/>
+            <TextBox Name="IngredientNameTextBox"/>
+            <Label Content="Quantity:"/>
+            <TextBox Name="QuantityTextBox"/>
+            <Label Content="Unit:"/>
+            <TextBox Name="UnitTextBox"/>
+            <Label Content="Calories:"/>
+            <TextBox Name="CaloriesTextBox"/>
+            <Label Content="Food Group:"/>
+            <TextBox Name="FoodGroupTextBox"/>
+            <Button Content="Add Ingredient" Click="AddIngredient_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
