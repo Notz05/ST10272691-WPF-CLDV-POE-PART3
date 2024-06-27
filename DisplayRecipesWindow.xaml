@@ -1,8 +1,21 @@
 ﻿<Window x:Class="RecipeApplicationWPF.DisplayRecipesWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Display Recipes" Height="450" Width="800">
+        Title="Display Recipe" Height="450" Width="800">
     <Grid>
-        <ListBox Name="RecipeListBox" DisplayMemberPath="Name"/>
+        <StackPanel>
+            <ComboBox Name="RecipeComboBox" DisplayMemberPath="Name" SelectionChanged="RecipeComboBox_SelectionChanged" Margin="10"/>
+            <TextBlock Name="RecipeDetailsTextBlock" TextWrapping="Wrap" Margin="10"/>
+            <ListBox Name="StepsListBox" Margin="10">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox IsChecked="{Binding Completed}"/>
+                            <TextBlock Text="{Binding Description}" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
     </Grid>
 </Window>

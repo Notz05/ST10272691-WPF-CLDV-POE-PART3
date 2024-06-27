@@ -15,6 +15,7 @@
             <Button Content="Display Recipes" Click="DisplayRecipes_Click" Margin="10"/>
             <Button Content="Display Recipe" Click="DisplayRecipe_Click" Margin="10"/>
             <Button Content="Filter Recipes" Click="FilterRecipes_Click" Margin="10"/>
+            <Button Content="Create Menu" Click="CreateMenu_Click" Margin="10"/>
         </StackPanel>
     </Grid>
 </Window>
